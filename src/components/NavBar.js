@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
-    <header className="bg-blue-800">
+    <header className="bg-blue-900">
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink
@@ -11,7 +11,7 @@ const NavBar = () => {
             activeClassName="text-white"
             className="inflex-flex items-center py-6 px-3 text-white hover:text-blue-300 text-4xl font-bold cursive tracking-widest"
           >
-            JAMIE
+            SARY JAMIE
           </NavLink>
           <NavLink
             to="/post"
@@ -35,6 +35,7 @@ const NavBar = () => {
             About Me
           </NavLink>
         </nav>
+        <div></div>
       </div>
     </header>
   );

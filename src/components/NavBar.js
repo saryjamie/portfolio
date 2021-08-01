@@ -10,7 +10,7 @@ const NavBar = () => {
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-8 px-3 text-white hover:text-blue-300 text-2xl font-bold cursive tracking-widest"
+            className="inflex-flex items-center py-9 px-3 text-white hover:text-blue-300 text-2xl font-bold cursive tracking-widest"
           >
             SARY JAMIE
           </NavLink>

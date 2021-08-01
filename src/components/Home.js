@@ -9,8 +9,8 @@ const Home = () => {
         alt="San Diego"
         className="absolute object-cover w-full h-full"
       />
-      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-24 px-8">
-        <h1 className="text-6xl text-blue-900 font-bold cursivea leading-none lg:leading-snug home-name">
+      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-44 px-8">
+        <h1 className="text-6xl text-gray-500 font-bold cursivea leading-none lg:leading-snug home-name">
           HELLO. IT'S SARY.
         </h1>
       </section>

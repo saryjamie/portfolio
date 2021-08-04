@@ -5,9 +5,9 @@ import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 
 const builder = imageUrlBuilder(sanityClient);
-const urlFor = (source) => {
+function urlFor(source) {
   return builder.image(source);
-};
+}
 
 const SinglePost = () => {
   const [singlePost, setSinglePost] = useState(null);
@@ -17,19 +17,19 @@ const SinglePost = () => {
     sanityClient
       .fetch(
         `*[slug.current == "${slug}"]{
-    title,
-    _id,
-    slug,
-    mainImage{
-      asset->{
+        title,
         _id,
-        url
-      }
-    },
-    body,
-    "name":author->name,
-    authorImage: author->image
-  }`
+        slug,
+        mainImage{
+          asset->{
+            _id,
+            url
+          }
+        },
+        body,
+        "name": author->name,
+        "authorImage": author->image
+      }`
       )
       .then((data) => setSinglePost(data[0]))
       .catch(console.error);

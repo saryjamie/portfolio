@@ -25,7 +25,7 @@ const Post = () => {
   return (
     <main className="bg-white min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl text-gray-600 flex jutify-center blog">
+        <h1 className="text-5xl text-gray-600 flex justify-center cursive">
           Blogs
         </h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">

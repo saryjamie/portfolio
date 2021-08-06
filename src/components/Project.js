@@ -24,9 +24,7 @@ const Project = () => {
   return (
     <main className="bg-green-100 min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl text-gray-600 flex justify-center cursive">
-          Project
-        </h1>
+        <h1 className="text-5xl flex justify-center cursive">Project</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my projects page
         </h2>
@@ -35,14 +33,14 @@ const Project = () => {
             projectData.map((project, index) => (
               <article className="relative reounded-lg shadow-xl bg-white p-16">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
-                  <a
+                  {/* <a
                     href={project.link}
                     alt={project.title}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {project.title}
-                  </a>
+                  </a> */}
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4">
                   <span>
@@ -60,17 +58,17 @@ const Project = () => {
                   <p className="my-6 text-lg text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
-                  <a
+                  {/* <a
                     href={project.link}
                     rel="noopener noreferrer"
                     target="_blank"
                     className="text-red-700 font-bold text-xl hover:underline hover:text-red-400"
-                  >
-                    View The Project{" "}
-                    <span role="img" aria-label="right pointer">
-                      ➡️
-                    </span>
-                  </a>
+                  > */}
+                  View The Project{" "}
+                  <span role="img" aria-label="right pointer">
+                    ➡️
+                  </span>
+                  {/* </a> */}
                 </div>
               </article>
             ))}

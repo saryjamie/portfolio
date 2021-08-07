@@ -11,6 +11,8 @@ import post from "./post";
 import project from "./project";
 import author from "./author";
 
+import projectimg from "./projectimg";
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -23,6 +25,8 @@ export default createSchema({
     post,
     author,
     project,
+
+    projectimg,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

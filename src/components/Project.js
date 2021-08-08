@@ -22,7 +22,7 @@ const Project = () => {
   return (
     <main>
       <section>
-        <Link>
+        <Link to={project.link}>
           <img />
           <h3></h3>
           <p></p>

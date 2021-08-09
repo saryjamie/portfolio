@@ -23,7 +23,7 @@ const Project = () => {
     <main>
       <section>
         <Link to={project.link}>
-          <img />
+          <img src={project.mainImage.asset.url} />
           <h3></h3>
           <p></p>
         </Link>

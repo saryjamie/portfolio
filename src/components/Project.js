@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import sanityClient from "../client.js";
 import { Link } from "react-router-dom";
+import sanityClient from "../client.js";
 
 const Project = () => {
   const [projectData, setProjectData] = useState(null);
@@ -10,7 +10,14 @@ const Project = () => {
       .fetch(
         `*[_type == "projectimg]{
       title,
-      mainImage,
+      _id,
+      mainImage{
+        asset->{
+          _id,
+          url
+        },
+        alt
+      },
       body,
       link
     }`
@@ -19,14 +26,29 @@ const Project = () => {
       .catch(console.error);
   }, []);
 
+  if (!projectData) return <div>Loading...</div>;
+
   return (
     <main>
       <section>
-        <Link to={project.link}>
-          <img src={project.mainImage.asset.url} />
-          <h3></h3>
-          <p></p>
-        </Link>
+        {projectData &&
+          projectData.map((projectimg, index) => (
+            <Link to={"/projectimg/" + projectimg.link} key={index}>
+              <span
+                className="block h-64 relative rounded shadow leading-snug bg-white border-4 border-blue-200"
+                key={index}
+              >
+                <img
+                  src={projectimg.mainImage.asset.url}
+                  alt={projectimg.mainImage.alt}
+                />
+                <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                  <h3>{projectimg.title}</h3>
+                </span>
+                {/* <p>Project Descreption</p> */}
+              </span>
+            </Link>
+          ))}
       </section>
     </main>
   );

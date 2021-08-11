@@ -15,7 +15,7 @@ function App() {
         <Route component={About} path="/about" />
         <Route component={SinglePost} path="/post/:slug" />
         <Route component={Post} path="/post" />
-        <Route component={Project} path="/project" />
+        <Route component={Project} path="/projectimg" />
       </Switch>
     </BrowserRouter>
   );

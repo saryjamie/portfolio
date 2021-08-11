@@ -10,7 +10,7 @@ const projectimgschema = {
     },
     {
       name: "mainImage",
-      title: "Main Image",
+      title: "Main image",
       type: "image",
       options: {
         hotspot: true,

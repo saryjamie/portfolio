@@ -64,7 +64,11 @@ const Project = () => {
                   </span>
                   <p className="my-6 text-lg text-gray-700 leading-relaxed">
                     {project.description}
-                    <a href={project.link} target="_blank">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img
                         src={project.mainImage.asset.url}
                         width="100%"

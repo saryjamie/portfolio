@@ -10,7 +10,7 @@ const Project = () => {
       .fetch(
         `*[_type == "projectimg]{
       title,
-      _id,
+
       mainImage{
         asset->{
           _id,
@@ -26,29 +26,45 @@ const Project = () => {
       .catch(console.error);
   }, []);
 
-  if (!projectData) return <div>Loading...</div>;
-
   return (
-    <main>
-      <section>
-        {projectData &&
-          projectData.map((projectimg, index) => (
-            <Link to={"/projectimg/" + projectimg.link} key={index}>
-              <span
-                className="block h-64 relative rounded shadow leading-snug bg-white border-4 border-blue-200"
-                key={index}
-              >
-                <img
-                  src={projectimg.mainImage.asset.url}
-                  alt={projectimg.mainImage.alt}
-                />
-                <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
-                  <h3>{projectimg.title}</h3>
-                </span>
-                {/* <p>Project Descreption</p> */}
-              </span>
-            </Link>
-          ))}
+    <main className="bg-white min-h-screen p-12">
+      <section className="container mx-auto">
+        <h1 className="text-5xl text-gray-600 flex justify-center cursive">
+          Projects
+        </h1>
+        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
+          Welcome to my page of Projects
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectData &&
+            projectData.map((projectimg, index) => (
+              <article>
+                <a
+                  href={projectimg.link}
+                  alt={projectimg.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span
+                    className="block h-64 relative rounded shadow leading-snug bg-white border-4 border-blue-200"
+                    key={index}
+                  >
+                    <img
+                      src={projectimg.mainImage.asset.url}
+                      alt={projectimg.mainImage.alt}
+                      className="w-full h-full rounded object-cover absolute"
+                    />
+                    <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
+                      <h3 className="text-gray-800 text-lg font-bold px-3 py-4 bg-red-700 text-red-100 bg-opacity-75 rounded">
+                        {projectimg.title}
+                      </h3>
+                    </span>
+                    {/* <p>Project Descreption</p> */}
+                  </span>
+                </a>
+              </article>
+            ))}
+        </div>
       </section>
     </main>
   );

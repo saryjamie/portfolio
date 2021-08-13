@@ -46,6 +46,10 @@ const projectschema = {
       type: "url",
     },
     {
+      name: "githublink",
+      type: "url",
+    },
+    {
       name: "tags",
       type: "array",
       of: [

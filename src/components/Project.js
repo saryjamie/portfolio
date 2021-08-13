@@ -21,6 +21,7 @@ const Project = () => {
       },
       projectType,
       link,
+      githublink,
       tags
     }`
       )
@@ -29,17 +30,17 @@ const Project = () => {
   }, []);
 
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main className="bg-white min-h-screen p-12">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Project</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my projects page
         </h2>
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative reounded-lg shadow-xl bg-white p-16">
-                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
+              <article className="block h-128 relative reounded-lg shadow-xl bg-white p-10 border">
+                <h3 className="text-gray-800 text-xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -62,18 +63,17 @@ const Project = () => {
                     <strong className="font-bold">Type</strong>:{" "}
                     {project.projectType}
                   </span>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  <p className="my-3 text-lg text-gray-700 leading-relaxed">
                     {project.description}
                     <a
                       href={project.link}
-                      target="_blank"
                       rel="noopener noreferrer"
+                      target="_blank"
                     >
                       <img
                         src={project.mainImage.asset.url}
-                        width="100%"
-                        hight="100%"
-                        alt="projecttttttt"
+                        alt={project.mainImage.asset.alt}
+                        className=" relative w-full h-full rounded grid md:grid-cols-2 lg:grid-cols-3"
                       />
                     </a>
                   </p>
@@ -81,12 +81,20 @@ const Project = () => {
                     href={project.link}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-red-500 font-bold text-xl hover:underline hover:text-red-400 justify-center"
+                    className="text-blue-700 font-bold text-xl hover:underline hover:text-red-500 justify-center"
                   >
-                    Live{" "}
+                    LIVE{" "}
                     {/* <span role="img" aria-label="right pointer">
                       ➡️
                     </span> */}
+                  </a>
+                  <a
+                    href={project.githublink}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="text-blue-700 font-bold text-xl hover:underline hover:text-red-500 justify-center"
+                  >
+                    GitHub{" "}
                   </a>
                 </div>
               </article>

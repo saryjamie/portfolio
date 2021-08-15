@@ -50,7 +50,7 @@ const Project = () => {
                     {project.title}
                   </a>
                 </h3>
-                <div className="text-gray-500 text-xs space-x-4">
+                <div className="text-gray-500 text-xs space-x-4 pr-8">
                   <span>
                     <strong className="font-bold">Finished on</strong>:{" "}
                     {new Date(project.date).toLocaleDateString()}
@@ -65,18 +65,18 @@ const Project = () => {
                   </span>
                   <p className="my-3 text-lg text-gray-700 leading-relaxed">
                     {project.description}
-                    <a
-                      href={project.link}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        src={project.mainImage.asset.url}
-                        alt={project.mainImage.asset.alt}
-                        className=" relative w-full h-full rounded grid md:grid-cols-2 lg:grid-cols-3"
-                      />
-                    </a>
                   </p>
+                  <a
+                    href={project.link}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      src={project.mainImage.asset.url}
+                      alt={project.mainImage.asset.alt}
+                      className="relative shadow w-full h-full rounded mb-8"
+                    />
+                  </a>
                   <a
                     href={project.link}
                     rel="noopener noreferrer"

@@ -74,7 +74,8 @@ const Project = () => {
                     <img
                       src={project.mainImage.asset.url}
                       alt={project.mainImage.asset.alt}
-                      className="relative shadow w-full h-full rounded mb-8"
+                      className="relative shadow rounded mb-8"
+                      style={{ height: "250px", width: "450px" }}
                     />
                   </a>
                   <a

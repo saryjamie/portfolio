@@ -36,10 +36,10 @@ const Project = () => {
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my projects page
         </h2>
-        <section className="grid grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="block h-128 relative reounded-lg shadow-xl bg-white p-10 border">
+              <article className="block h-128 relative rounded reounded-lg shadow-xl bg-white p-10 border">
                 <h3 className="text-gray-800 text-xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
@@ -63,7 +63,7 @@ const Project = () => {
                     <strong className="font-bold">Type</strong>:{" "}
                     {project.projectType}
                   </span>
-                  <p className="my-3 text-lg text-gray-700 leading-relaxed">
+                  <p className="my-3 text-lg text-gray-600 leading-relaxed">
                     {project.description}
                   </p>
                   <a

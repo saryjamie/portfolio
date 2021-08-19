@@ -32,7 +32,9 @@ const Project = () => {
   return (
     <main className="bg-white min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">Project</h1>
+        <h1 className="text-5xl text-gray-800 flex justify-center cursive">
+          Project
+        </h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome to my projects page
         </h2>

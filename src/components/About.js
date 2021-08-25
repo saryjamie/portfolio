@@ -34,7 +34,7 @@ const About = () => {
         <h1 className="text-5xl text-gray-800 flex justify-center cursive mb-10">
           About Me
         </h1>
-        <section className="bg-blue-700 rounded-lg shadow-2xl lg:flex p-20 pt-10">
+        <section className="bg-blue-800 rounded-lg shadow-2xl lg:flex p-20 pt-10">
           <img
             src={urlFor(author.authorImage).url()}
             alt={author.name}

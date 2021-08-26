@@ -43,7 +43,7 @@ const Project = () => {
             projectData.map((project, index) => (
               <article>
                 <span className="block h-160 relative rounded reounded-lg shadow-xl bg-blue-200 p-5 border">
-                  <h3 className="text-gray-800 text-xl font-bold mb-2 hover:text-red-700">
+                  <h3 className="text-gray-800 text-xl font-bold mb-2 hover:text-red-600">
                     <a
                       href={project.link}
                       alt={project.title}

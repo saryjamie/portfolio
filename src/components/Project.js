@@ -91,9 +91,6 @@ const Project = () => {
                         className="text-blue-700 font-bold text-xl hover:underline hover:text-red-500 justify-center"
                       >
                         LIVE{" "}
-                        {/* <span role="img" aria-label="right pointer">
-                      ➡️
-                    </span> */}
                       </a>
                       <a
                         href={project.githublink}

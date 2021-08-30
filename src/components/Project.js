@@ -36,7 +36,7 @@ const Project = () => {
           Projects
         </h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome to my projects page
+          Welcome To My Projects Page
         </h2>
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projectData &&

@@ -79,7 +79,7 @@ const Project = () => {
                           className="relative shadow rounded mb-8"
                           style={{
                             marginBottom: "5",
-                            height: "250px",
+                            // height: "250px",
                             width: "750",
                           }}
                         />

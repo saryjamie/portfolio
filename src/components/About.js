@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <main className="relative ">
-      <img src={pf9} alt="Country" className="absolute w-full" />
+      <img src={pf9} alt="Country" className="absolute w-full h-full" />
       <div className="p-10 lg:pt-12 container mx-auto relative">
         <h1 className="text-5xl text-gray-800 flex justify-center cursive mb-10">
           About Me

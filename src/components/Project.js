@@ -40,7 +40,7 @@ const Project = () => {
         </h2>
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projectData &&
-            projectData.map((project, index) => (
+            projectData.map((project) => (
               <article>
                 <span className="block h-160 relative rounded reounded-lg shadow-xl bg-blue-200 p-5 border">
                   <h3 className="text-gray-800 text-xl font-bold mb-2 hover:text-red-600">

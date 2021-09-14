@@ -35,6 +35,11 @@ const NavBar = () => {
           >
             About Me
           </NavLink>
+          <NavLink
+            to="/project"
+            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
+            activeClassName="text-yellow-300 bg-blue-700"
+          ></NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
           <SocialIcon

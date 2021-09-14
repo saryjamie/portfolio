@@ -1,11 +1,19 @@
 import React from "react";
+import image from "../codebg.jpg";
 
 const Contact = () => {
   return (
-    <main className="bg-blue-100 main-h-screen p-12">
-      <div className="form-container">
+    <main>
+      <img
+        src={image}
+        alt="World Map Binary"
+        className="absolute opacity-20 object-cover w-full h-full"
+      />
+      <div className="p-10 lg:pt-6 container mx-auto relative">
         <form className="contact-form ml-10">
-          <h1>CONTACT</h1>
+          <h1 className="text-5xl text-gray-700 flex justify-center cursive mb-10">
+            CONTACT
+          </h1>
           <input type="text" id="name" placeholder="Full Name" />
           <br />
           <br />

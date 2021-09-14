@@ -1,5 +1,11 @@
 import React from "react";
 import image from "../codebg.jpg";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+const submitBtn = () => {
+  console.log("Submited");
+};
 
 const Contact = () => {
   return (
@@ -31,7 +37,9 @@ const Contact = () => {
           ></textarea>
           <br />
           <br />
-          <button>SUBMIT</button>
+          <Button type="submit" value="Submit" variant="secondary">
+            Submit
+          </Button>
         </form>
       </div>
     </main>

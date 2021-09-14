@@ -12,7 +12,7 @@ const Contact = () => {
       <div className="p-10 lg:pt-6 container mx-auto relative">
         <form className="contact-form ml-10">
           <h1 className="text-5xl text-gray-700 flex justify-center cursive mb-10">
-            CONTACT
+            Contact Me
           </h1>
           <input type="text" id="name" placeholder="Full Name" />
           <br />

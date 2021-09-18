@@ -3,9 +3,9 @@ import image from "../codebg.jpg";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const submitBtn = () => {
-  console.log("Submited");
-};
+// const submitBtn = () => {
+//   console.log("Submited");
+// };
 
 const Contact = () => {
   return (

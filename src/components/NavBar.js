@@ -10,34 +10,34 @@ const NavBar = () => {
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-9 px-3 text-white hover:text-blue-300 text-2xl font-bold cursive tracking-widest"
+            className="inflex-flex text-decoration-none items-center py-9 px-3 text-white hover:text-blue-300 text-2xl font-bold cursive tracking-widest"
           >
             SARY JAMIE
           </NavLink>
           <NavLink
             to="/post"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
+            className="inline-flex text-decoration-none items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
             activeClassName="text-yellow-300 bg-blue-700"
           >
             Blog Posts
           </NavLink>
           <NavLink
             to="/project"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
+            className="inline-flex text-decoration-none items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
             activeClassName="text-yellow-300 bg-blue-700"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
+            className="inline-flex text-decoration-none items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
             activeClassName="text-yellow-300 bg-blue-700"
           >
             About Me
           </NavLink>
           <NavLink
             to="/contact"
-            className="inline-flex items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
+            className="inline-flex text-decoration-none items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
             activeClassName="text-yellow-300 bg-blue-700"
           >
             Contact Me

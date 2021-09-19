@@ -3,6 +3,7 @@ import sanityClient from "../client.js";
 import pf9 from "../pf9.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+import "./About.css";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {

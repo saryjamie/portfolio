@@ -25,7 +25,7 @@ const About = () => {
       .catch(console.error);
   }, []);
 
-  if (!author) return <div>Loading...</div>;
+  if (!author) return <div className="loader">Loading...</div>;
 
   return (
     <main className="relative ">

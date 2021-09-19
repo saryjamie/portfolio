@@ -2,6 +2,7 @@ import React from "react";
 import image from "../codebg.jpg";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Contact.css";
 
 // const submitBtn = () => {
 //   console.log("Submited");

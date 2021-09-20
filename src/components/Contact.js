@@ -21,7 +21,7 @@ const Contact = () => {
           <h1 className="text-5xl text-gray-700 flex justify-center cursive mb-10">
             Contact Me
           </h1>
-          <div className="absolute mt-2 ml-10 w-80 h-600 ">
+          <div className="formcss absolute mt-2 ml-10 w-80 h-600 ">
             <input type="text" id="name" placeholder="Full Name" />
             <br />
             <br />

@@ -16,34 +16,50 @@ const Contact = () => {
         className="absolute opacity-20 object-cover w-full h-full"
       />
       <div className="p-10 lg:pt-6 container mx-auto relative">
-        <form className="contact-form ml-10">
+        <form className="contact-form ml-10 ">
           <h1 className="text-5xl text-gray-700 flex justify-center cursive mb-10">
             Contact Me
           </h1>
-          <div className="absolute mt-2 ml-10 w-full h-600 ">
+          <div className="relative mt-2 m-10 w-150 h-600 ">
             <input
-              className="w-full"
+              className="w-full opacity-60 mr-20"
               type="text"
               id="name"
               placeholder="Full Name"
             />
             <br />
             <br />
-            <input type="email" id="email" placeholder="Email" />
+            <input
+              className="w-full opacity-60 mr-20"
+              type="email"
+              id="email"
+              placeholder="Email"
+            />
             <br />
             <br />
-            <input type="text" id="subject" placeholder="Subject" />
+            <input
+              className="w-full opacity-60 mr-20"
+              type="text"
+              id="subject"
+              placeholder="Subject"
+            />
             <br />
             <br />
             <textarea
+              className="w-full opacity-60 mr-20"
               id="message"
               placeholder="Message"
               cols="30"
-              rows="10"
+              rows="8"
             ></textarea>
             <br />
             <br />
-            <Button type="submit" value="Submit" variant="secondary">
+            <Button
+              className="w-full"
+              type="submit"
+              value="Submit"
+              variant="secondary"
+            >
               Submit
             </Button>
           </div>

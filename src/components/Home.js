@@ -3,6 +3,7 @@ import sanityClient from "../client.js";
 import image from "../codebg.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+import "./Spinner.css";
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -25,7 +26,7 @@ const Home = () => {
       .catch(console.error);
   }, []);
 
-  if (!author) return <div>Loading...</div>;
+  if (!author) return <div className="loader">Loading...</div>;
   return (
     <main>
       <img

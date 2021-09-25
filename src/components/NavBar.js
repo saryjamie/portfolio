@@ -14,19 +14,20 @@ const NavBar = () => {
           >
             SARY JAMIE
           </NavLink>
-          <NavLink
-            to="/post"
-            className="inline-flex text-decoration-none items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
-            activeClassName="text-yellow-300 bg-blue-700"
-          >
-            Blog Posts
-          </NavLink>
+
           <NavLink
             to="/project"
             className="inline-flex text-decoration-none items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
             activeClassName="text-yellow-300 bg-blue-700"
           >
             Projects
+          </NavLink>
+          <NavLink
+            to="/post"
+            className="inline-flex text-decoration-none items-center py-3 px-3 my-6 rounded text-blue-200 hover:text-yellow-300"
+            activeClassName="text-yellow-300 bg-blue-700"
+          >
+            Blog Posts
           </NavLink>
           <NavLink
             to="/about"

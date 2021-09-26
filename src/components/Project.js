@@ -29,6 +29,8 @@ const Project = () => {
       .catch(console.error);
   }, []);
 
+  if (!projectData) return <div className="loader">Loading...</div>;
+
   return (
     <main className="bg-blue-100 min-h-screen p-12">
       <section className="container mx-auto">

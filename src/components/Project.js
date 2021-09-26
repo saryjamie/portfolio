@@ -33,11 +33,11 @@ const Project = () => {
   if (!projectData) return <div className="loader">Loading...</div>;
 
   return (
-    <main>
+    <main className="relative">
       <img
         src={image}
         alt="World Map Binary"
-        className="relative opacity-20 object-cover w-full h-full"
+        className="absolute opacity-20 object-cover w-full h-full"
       />
       <section className="container mx-auto">
         <h1 className="text-5xl text-gray-700 flex justify-center cursive">

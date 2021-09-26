@@ -44,7 +44,7 @@ const Home = () => {
         <img
           src={image}
           alt="World"
-          className="absolute opacity-80 object- w-full h-full"
+          className="absolute opacity-80 object-cover w-full h-full"
         />
 
         <div className="p-10 lg:pt-12 container mx-auto relative">

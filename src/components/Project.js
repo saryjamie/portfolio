@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client.js";
+import image from "../codebg.jpg";
 
 const Project = () => {
   const [projectData, setProjectData] = useState(null);
@@ -32,7 +33,12 @@ const Project = () => {
   if (!projectData) return <div className="loader">Loading...</div>;
 
   return (
-    <main className="bg-blue-100 min-h-screen p-12">
+    <main>
+      <img
+        src={image}
+        alt="World Map Binary"
+        className="relative opacity-20 object-cover w-full h-full"
+      />
       <section className="container mx-auto">
         <h1 className="text-5xl text-gray-700 flex justify-center cursive">
           Projects

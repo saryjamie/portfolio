@@ -37,7 +37,7 @@ const Project = () => {
       <img
         src={image}
         alt="World Map Binary"
-        className="absolute opacity-20 w-full h-full"
+        className="absolute opacity-30 w-full h-full"
       />
       <section className="container mx-auto">
         <h1 className="text-5xl text-gray-700 flex justify-center cursive">

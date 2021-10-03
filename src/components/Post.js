@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client.js";
-import image from "./codebg.jpg";
+import image from "../codebg.jpg";
 
 const Post = () => {
   const [postData, setPost] = useState(null);
@@ -24,7 +24,7 @@ const Post = () => {
       .catch(console.error);
   }, []);
   return (
-    <main className="relative">
+    <main>
       <img
         src={image}
         alt="World Map Binary"

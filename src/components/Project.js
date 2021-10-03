@@ -33,7 +33,7 @@ const Project = () => {
   if (!projectData) return <div className="loader">Loading...</div>;
 
   return (
-    <main className="relative">
+    <main>
       <img
         src={image}
         alt="World Map Binary"

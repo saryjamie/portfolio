@@ -58,6 +58,7 @@ const Project = () => {
                         alt={project.title}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="text-decoration-none"
                       >
                         {project.title}
                       </a>
@@ -97,7 +98,7 @@ const Project = () => {
                           href={project.link}
                           rel="noopener noreferrer"
                           target="_blank"
-                          className="text-blue-700 font-bold text-xl hover:text-red-600 justify-center"
+                          className="text-blue-700 font-bold text-xl hover:text-red-600 justify-center text-decoration-none"
                         >
                           LIVE{" "}
                         </a>
@@ -105,7 +106,7 @@ const Project = () => {
                           href={project.githublink}
                           rel="noopener noreferrer"
                           target="_blank"
-                          className="m-10 text-blue-700 font-bold text-xl hover:text-red-600 justify-center"
+                          className="m-10 text-blue-700 font-bold text-xl hover:text-red-600 justify-center text-decoration-none"
                         >
                           GitHub{" "}
                         </a>

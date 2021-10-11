@@ -63,7 +63,7 @@ const Project = () => {
                         {project.title}
                       </a>
                     </h3>
-                    <div className="text-gray-600 text-xs space-x-4 pr-8">
+                    <div className="text-gray-500 text-xs space-x-4 pr-8">
                       <span>
                         <strong className="font-bold">Finished on</strong>:{" "}
                         {new Date(project.date).toLocaleDateString()}

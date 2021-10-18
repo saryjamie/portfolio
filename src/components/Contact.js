@@ -63,6 +63,11 @@ const Contact = () => {
               Submit
             </Button>
           </div>
+          <br />
+          <div>
+            <h3>Email</h3>
+            <h3>Phone</h3>
+          </div>
         </form>
       </div>
     </main>

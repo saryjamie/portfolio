@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Contact = () => {
   return (
-    <main>
+    <main className="relative">
       <img
         src={image}
         alt="World Map Binary"
@@ -20,7 +20,7 @@ const Contact = () => {
           <h1 className="text-5xl text-gray-700 flex justify-center cursive mb-10">
             Contact Me
           </h1>
-          <div className="relative mt-2 m-10 w-150 h-600 ">
+          <div className="relative mt-2 m-20 w-150 h-600 ">
             <input
               className="w-full opacity-60 mr-20"
               type="text"

@@ -65,8 +65,8 @@ const Contact = () => {
           </div>
           <br />
           <div>
-            <h3>Email</h3>
-            <h3>Phone</h3>
+            <p>Email</p>
+            <p>Phone</p>
           </div>
         </form>
       </div>

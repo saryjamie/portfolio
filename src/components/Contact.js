@@ -20,7 +20,7 @@ const Contact = () => {
           <h1 className="text-5xl text-gray-700 flex justify-center cursive mb-10">
             Contact Me
           </h1>
-          <div className="relative mt-2 m-20 w-150 h-600 ">
+          <div className="relative mt-2 mr-20 ml-20 w-150 h-600 ">
             <input
               className="w-full opacity-60 mr-20"
               type="text"
@@ -55,7 +55,7 @@ const Contact = () => {
             <br />
             <br />
             <Button
-              className="w-full"
+              className="w-50 ml-60"
               type="submit"
               value="Submit"
               variant="secondary"
@@ -64,7 +64,7 @@ const Contact = () => {
             </Button>
           </div>
           <br />
-          <div>
+          <div className="ml-20">
             <h5>Email: sary.jamie@gmail.com</h5>
             <h5>Phone: +1(858)888-1577</h5>
           </div>

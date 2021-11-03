@@ -68,7 +68,7 @@ const Contact = () => {
             <h5>Email: sary.jamie@gmail.com</h5>
             <h5>Phone: +1(858)888-1577</h5>
             <h5>Github: https://github.com/saryjamie</h5>
-            <h5>linkedin: </h5>
+            <h5>linkedin: www.linkedin.com</h5>
           </div>
         </form>
       </div>

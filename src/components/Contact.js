@@ -63,7 +63,7 @@ const Contact = () => {
               Submit
             </Button>
           </div>
-          <br />
+          <hr />
           <div className="ml-20">
             <h5>Email: sary.jamie@gmail.com</h5>
             <h5>Phone: +1(858)888-1577</h5>

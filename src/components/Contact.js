@@ -53,7 +53,7 @@ const Contact = () => {
               rows="8"
             ></textarea>
             <br />
-            <br />
+
             <Button
               className="w-50 ml-60"
               type="submit"

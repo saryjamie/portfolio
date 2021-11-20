@@ -64,7 +64,6 @@ const Contact = () => {
             </Button>
           </div>
           <hr />
-          <hr />
           <div className="ml-20">
             <h3>
               Email:<span className="text-lg"> sary.jamie@gmail.com</span>

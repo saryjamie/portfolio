@@ -65,15 +65,15 @@ const Contact = () => {
           </div>
           <hr />
           <div className="ml-20">
-            <h2>Sary Jamie</h2>
-            <h3>
+            <h3>Sary Jamie</h3>
+            <h4>
               Email:<span className="text-lg"> sary.jamie@gmail.com</span>
-            </h3>
-            <h3>Phone: +1(858)888-1577</h3>
-            <h3>Github: https://github.com/saryjamie</h3>
-            <h3>
+            </h4>
+            <h4>Phone: +1(858)888-1577</h4>
+            <h4>Github: https://github.com/saryjamie</h4>
+            <h4>
               linkedin: https://www.linkedin.com/in/sary-jamie-mba-15162994/
-            </h3>
+            </h4>
           </div>
         </form>
       </div>

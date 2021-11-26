@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="p-10 lg:pt-6 container mx-auto relative">
         <form className="contact-form ml-10 ">
           <h1 className="text-5xl text-gray-700 flex justify-center cursive mb-10">
-            Contact Me
+            Contact
           </h1>
           <div className="relative mt-2 mr-20 ml-20 w-150 h-600 ">
             <input

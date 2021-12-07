@@ -28,7 +28,7 @@ const Contact = () => {
               placeholder="Full Name"
             />
             <br />
-            <br />
+
             <input
               className="w-full opacity-60 mr-20"
               type="email"

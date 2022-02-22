@@ -72,7 +72,10 @@ const Contact = () => {
             <h4>Phone: +1(858)888-1577</h4>
             <h4>Github: https://github.com/saryjamie</h4>
             <h4>
-              linkedin: https://www.linkedin.com/in/sary-jamie-mba-15162994/
+              linkedin:{" "}
+              <span>
+                <a>https://www.linkedin.com/in/sary-jamie-mba-15162994/</a>
+              </span>
             </h4>
           </div>
         </form>

@@ -74,7 +74,9 @@ const Contact = () => {
             <h4>
               linkedin:{" "}
               <span>
-                <a>https://www.linkedin.com/in/sary-jamie-mba-15162994/</a>
+                <a href="https://www.linkedin.com/in/sary-jamie-mba-15162994/">
+                  https://www.linkedin.com/in/sary-jamie-mba-15162994/
+                </a>
               </span>
             </h4>
           </div>

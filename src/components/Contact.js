@@ -70,7 +70,15 @@ const Contact = () => {
               Email:<span className="text-lg"> sary.jamie@gmail.com</span>
             </h4>
             <h4>Phone: +1(858)888-1577</h4>
-            <h4>Github: https://github.com/saryjamie</h4>
+            <h4>
+              Github:{" "}
+              <span>
+                <a href="https://github.com/saryjamie">
+                  {" "}
+                  https://github.com/saryjamie
+                </a>
+              </span>
+            </h4>
             <h4>
               linkedin:{" "}
               <span>

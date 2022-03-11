@@ -88,6 +88,7 @@ const Contact = () => {
               </span>
             </h4>
           </div>
+          <br /> 
         </form>
       </div>
     </main>

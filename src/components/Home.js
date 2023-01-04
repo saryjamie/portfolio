@@ -29,7 +29,7 @@ const Home = () => {
   if (!author) return <div className="loader">Loading...</div>;
   return (
     <main>
-      <img
+      {/* <img
         src={image}
         alt="World Map Binary"
         className="absolute opacity-20 object-cover w-full h-full"
@@ -38,7 +38,7 @@ const Home = () => {
         <h1 className="text-6xl text-gray-500 font-bold cursivea leading-none lg:leading-snug home-name">
           HELLO. IT'S SARY.
         </h1>
-      </section>
+      </section> */}
 
       <div className="relative">
         <img
